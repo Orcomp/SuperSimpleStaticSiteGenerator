@@ -1,0 +1,18 @@
+[.contact]
+== Contact Us
+
+// Notice you can embed HTML
+
+Send us a message.
+
+++++
+<div>
+  <form name="contact" method="POST">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" placeholder="Your email" required>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+++++

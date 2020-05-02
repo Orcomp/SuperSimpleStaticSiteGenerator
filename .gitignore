@@ -1,0 +1,8 @@
+bin
+obj
+.idea
+packages
+data/output/css
+data/output/js
+data/output/*.html
+!data/output/404.html

@@ -1,0 +1,1 @@
+This text was included from the simpleInclude.adoc file. You can't do this in Markdown.

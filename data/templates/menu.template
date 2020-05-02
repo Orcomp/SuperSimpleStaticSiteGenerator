@@ -1,0 +1,19 @@
+<menu>
+    <div>
+        <ul id="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li>
+                <a>Docs</a>
+                <ul>
+                    <li><a href="/doc/TOC.html">TOC</a></li>
+                    <li><a href="/doc/extend.html">Extend</a></li>
+                    <li><a href="/doc/css.html">CSS</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a id="mnu"><svg class="icon icon-menu">
+                <use xlink:href="#icon-menu"></use>
+            </svg></a>
+        <span>Phone Number</span>
+    </div>
+</menu>

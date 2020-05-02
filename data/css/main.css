@@ -1,0 +1,587 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*-----------------------------------
+TYPOGRAPHY
+------------------------------------*/
+
+@font-face {
+  font-family: 'MontserratLight';
+  font-display: swap;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url('https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+000-5FF;
+  /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+000-5FF;
+  /* Latin glyphs */
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url('https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  unicode-range: U+000-5FF;
+  /* Latin glyphs */
+}
+
+/*-----------------------------------
+BASE
+------------------------------------*/
+
+body {
+  background: #f0f0f0;
+  color: #242424;
+  font: 300 22px 'MontserratLight', sans-serif;
+  letter-spacing: -0.015em;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  color: #1B82B7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #40B39E
+}
+
+h2 {
+  background: linear-gradient(to right, #40B39E 0%, #1B82B7 100%) no-repeat center bottom/5em 0.15em;
+  font: 400 2em 'MontserratLight', sans-serif;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+  padding-bottom: 0.3em;
+  text-align: center;
+}
+
+h3 {
+  font: 800 1.5em 'MontserratSemiBold', sans-serif;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font: 800 1.1em 'MontserratSemiBold', sans-serif;
+  margin: 0.5em 0 0.5em 0;
+}
+
+h6 {
+  display: none
+}
+
+section p {
+  margin-top: 1em;
+}
+
+ul,
+ol {
+  list-style: disc;
+  margin-left: 50px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.ulist {
+  margin-top: 0.6em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-right: 0.5em;
+}
+
+.level-1>.ulist {
+  width: 50%;
+  text-align: left;
+  margin: auto;
+}
+
+li {
+  margin-bottom: 0.2em
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-bottom: 0.2em;
+}
+
+strong {
+  font: 600 1em 'MontserratBold', sans-serif;
+  letter-spacing: 0em;
+}
+
+/*.................
+FORM
+..................*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+  padding: 1em 0 2em 0;
+}
+
+input,
+textarea {
+  background: #fff;
+  border: solid 1px #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.075);
+  font-size: 15px;
+  padding: 7px 10px;
+  margin: 15px;
+}
+
+button {
+  background: #1B82B7;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0 auto;
+  padding: 7px 10px;
+  width: 120px;
+}
+
+button:hover {
+  background: #40B39E;
+}
+
+/*-----------------------------------
+LAYOUT - SECTIONS
+------------------------------------*/
+
+#content>section {
+  width: 100%;
+  padding: 2em;
+}
+
+#content>section:nth-child(even) {
+  background: #fff;
+}
+
+section>h3 {
+  margin-left: -2em;
+}
+
+section>h4 {
+  margin-top: 1em;
+  margin-left: -1em;
+}
+
+/*.................
+HEADER
+..................*/
+
+header {
+  background: linear-gradient(45deg, #40B39E 0%, #1B82B7 100%);
+  color: #fff;
+  padding: 1em 1em;
+}
+
+header>h1 {
+  display: flex;
+  flex-direction: column;
+  font: 600 3.5em 'MontserratSemiBold', sans-serif;
+  line-height: 1.25em;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  max-width: 1200px;
+  padding-top: 0.75em;
+}
+
+header>h1>span {
+  background: rgba(0, 0, 0, .2);
+}
+
+header>h1>span:first-child {
+  text-align: left;
+  padding: 0 0 0 1em;
+  margin: 0 2em 10px 0
+}
+
+header>h1>span:nth-child(2) {
+  text-align: center;
+  margin: 0 1em 10px 1em
+}
+
+header>h1>span:last-child {
+  text-align: right;
+  padding: 0 1em 0 0;
+  margin: 0 0 0 2em
+}
+
+header>div {
+  font: 400 2em 'MontserratLight', sans-serif;
+  text-align: center;
+  padding: 1em 1em 0.5em 1em;
+}
+
+header>div>strong {
+  font: 400 1.4em 'MontserratBold', sans-serif;
+}
+
+header>div>p {
+  margin-bottom: 0.5em;
+}
+
+/*.................
+FOOTER
+..................*/
+
+footer {
+  background: #242424;
+  color: #f0f0f0;
+  font-size: 14px;
+  padding: 50px 50px 20px 50px;
+  text-align: center;
+}
+
+/*.................
+CONTACT
+..................*/
+
+.contact {
+  text-align: center;
+}
+
+/*-----------------------------------
+COMPONENTS
+------------------------------------*/
+
+/*.................
+MENU
+..................*/
+
+menu>div {
+  margin: 1em 1em;
+  position: relative;
+  text-align: right;
+}
+
+menu a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+menu img {
+  position: absolute;
+  left: 0;
+  height: 60px;
+}
+
+menu>div>ul {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+menu>div>ul>li {
+  display: inline-block;
+  height: 35px;
+  margin-left: 20px;
+  position: relative;
+}
+
+menu>div>ul>li>ul {
+  position: absolute;
+  top: -1000px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+menu>div>ul>li:hover ul {
+  top: 1.5em;
+  left: 5px;
+}
+
+menu>div>ul>li>ul>li {
+  border-bottom: solid 1px #e5e5e5;
+  background: #fff;
+  display: block;
+  margin: 0;
+}
+
+menu>div>ul>li>ul>li>a {
+  display: block;
+  font-size: 0.9em;
+  line-height: 2.5em;
+  padding: 0 20px;
+}
+
+/*.................
+MNU (HAMBURGER)
+..................*/
+
+#mnu {
+  color: #444;
+  font-size: 2em;
+  display: block;
+  position: absolute;
+  right: 155px;
+  top: -100px;
+}
+
+#mnu:hover {
+  color: #0e81b9;
+}
+
+/*.................
+PREAMBLE
+..................*/
+
+#preamble{
+  background-color: white;
+}
+
+#preamble p {
+  max-width: 80%;
+  margin: auto;
+  font-size: larger;
+  text-align: center;
+}
+
+#preamble figure{
+  margin: auto;
+  text-align: center;
+  padding-top: 2em;
+}
+
+#preamble img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 20px
+  }
+
+  header>h1 {
+    width: 100%;
+  }
+
+  .level-1>.ulist {
+    width: 70%;
+  }
+
+  form {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  header>h1 {
+    font-size: 3em;
+  }
+
+  header>div {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 801px) {
+  body {
+    font-size: 16px
+  }
+
+  .toc {
+    flex-direction: column;
+  }
+
+  .toc>h2 {
+    background: linear-gradient(to right, #40B39E 0%, #1B82B7 100%) no-repeat center bottom/5em 0.15em;
+    text-align: center;
+  }
+
+  menu img {
+    top: 10px;
+    height: 40px;
+  }
+
+  menu>div {
+    margin: 0 1em;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  body {
+    font-size: 14px
+  }
+
+  .level-1>.ulist {
+    width: 85%;
+  }
+
+  form {
+    width: 70%;
+  }
+
+  header>h1{
+    font-size: 2.5em;
+  }
+
+  header>div {
+    font-size: 1.7em;
+  }
+
+  menu>div {
+    height: 60px;
+  }
+
+  menu>div>span {
+    height: 3em;
+    position: absolute;
+    right:0;
+    top: 20px;
+  }
+
+  /*
+  menu>div>ul>li>ul>li {
+    display: list-item;
+    list-style: disc;
+  }
+  */
+
+  menu>div>ul>li>ul>li>a {
+    padding: 0 30px;
+  }
+
+  menu>div>ul>li>ul>li>a:hover {
+    color: #40B39E;
+  }
+
+  #mnu {
+    top: 0.5em;
+  }
+
+  #menu {
+    background: #fff;
+    display: none;
+    position: absolute;
+    right: 95px;
+    top: 30px;
+    text-align: left;
+  }
+
+  #menu.on {
+    display: block
+  }
+
+  #menu>li {
+    border-bottom: solid 1px #e5e5e5;
+    display: block;
+    height: auto;
+    margin: 0;
+  }
+
+  #menu>li>a {
+    display: block;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+
+  #menu>li>ul {
+    position: initial;
+    margin-left: 0;
+  }
+
+  #menu>li>ul>li {
+    border-top: solid 1px #e5e5e5;
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+}

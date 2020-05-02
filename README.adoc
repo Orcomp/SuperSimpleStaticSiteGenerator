@@ -1,0 +1,61 @@
+= SuperSimpleStaticSiteGenerator
+
+Super Simple Static Site Generator (S4G): Convert your Markdown and AsciiDoc files into a website quickly
+
+There are 2 objectives in creating this repository:
+
+. Learning. Especially various refactoring and DDD technics
+. Produce a super simple application to convert Markdown and AsciiDoc files into a static website
+
+This repository will document my learning journey with a real example.
+
+Towards the end of 2018, I wanted to redesign our company website. I went looking for a simple solution that could handle AsciiDoc files and couldn't find anything as simple as I wished.
+
+So I decided to create something quickly. It was ugly, but it served its purpose. 
+
+The working solution is in the first commit of this repository ... with all its imperfections. This is good, because it is a real example of a solution that was put together quickly to satisfy a need. Which it did.
+
+I purposely did not tidy up or improve the code before saving the first commit. It would defeat the purpose. 
+
+The code base will now serve a different purpose. I am about to embark on a journey to learn DDD and various refactoring techniques.
+
+A journal of the lessons learned and the reasons for making certain decisions, will be kept in the wiki.
+
+== Introduction
+
+Couldn't find something that was "super simple".
+
+My definition of simple:
+
+- Templates
+- Move content into template tokens
+
+Main idea is to be able to extract content from an HTML page.
+
+Markdown and AsciiDoc files can be converted to HTML files quite easily.
+
+=== Original project objective
+
+* Build an extremely fast website
+* minify js, css, and images
+
+== Repository objective
+
+== Application objective
+
+== User Documentation
+
+=== Requirements
+
+* AsciiDoctor installed with the following plugin
+
+=== Data structure
+
+NOTE: Files taken from https://github.com/h5bp/html5-boilerplate[HTML5 boilerplate]
+
+== Developer Documentation
+
+== References
+
+* https://github.com/h5bp/html5-boilerplate[HTML5 boilerplate]
+* https://asciidoctor.org/[Asciidoctor]

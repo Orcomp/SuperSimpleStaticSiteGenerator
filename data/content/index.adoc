@@ -1,0 +1,30 @@
+////
+This is the comment section and will be ignored when converting to HTML
+////
+
+= This is the header!
+:linkcss:
+
+// Beware of the Preamble
+
+[.intro]
+== Introduction
+
+The text below is taken from another AsciiDoc file (simpleInclude.adoc):
+
+// Include content from another adoc file
+// These comments will get ignored from the HTML content as well
+```
+include::simpleInclude.adoc[]
+```
+
+[.header2]
+== This is a h2 header
+
+[.bullets]
+* Point 1
+* Point 2
+* Point 3
+
+// Include a contact form defined in contactUs.adoc
+include::contactUs.adoc[]

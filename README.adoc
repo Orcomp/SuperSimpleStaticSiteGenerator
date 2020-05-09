@@ -25,14 +25,19 @@ A journal of the lessons learned and the reasons for making certain decisions, w
 
 Couldn't find something that was "super simple".
 
-My definition of simple:
+My definition of simple would roughly follow this workflow:
 
-- Templates
-- Move content into template tokens
+. Build simple HTML templates with tokens
+. Write content in Markdown or AsciiDoc files
+. Convert the text files into HTML
+. Extract relevant areas from these HTML files based on tags, class names or IDs
+. Replace the template tokens with the extracts to create a new HTML file
 
-Main idea is to be able to extract content from an HTML page.
+The benefits are:
 
-Markdown and AsciiDoc files can be converted to HTML files quite easily.
+* All content can be version controlled
+* Creating templates for different areas of a website becomes trivial
+* Ultimate flexibility and control over the final look and feel of the website
 
 === Original project objective
 
@@ -43,15 +48,50 @@ Markdown and AsciiDoc files can be converted to HTML files quite easily.
 
 == Application objective
 
+=== Possible future direction
+
+* Config file (yaml) 
+* Command line parameters
+* Cross cutting concerns
+
 == User Documentation
 
 === Requirements
 
-* AsciiDoctor installed with the following plugin
+* Ruby
+* AsciiDoctor
+* HTML5 semantic output
 
-=== Data structure
+=== Installation
+
+Please see the corresponding links for more details
+
+* Install latest Ruby for windows: https://rubyinstaller.org/downloads/ (Or use "cinst ruby" using Chocolatey)
+** Use all default installation options (including installing msys64)
+* Install AsciiDoctor: https://asciidoctor.org/docs/install-toolchain/
+** Go to C:\tools\ruby26\bin and run "gem install asciidoctor"
+* Install the https://github.com/jirutka/asciidoctor-html5s[HTML5 Semantic output gem]
+** Read the "usage" section
+
+=== Data (folder) structure
 
 NOTE: Files taken from https://github.com/h5bp/html5-boilerplate[HTML5 boilerplate]
+
+=== Templates
+
+==== Structure
+
+Tokens:
+* dot (.) Extract using class name
+* # Extract using ID
+
+=== AsciiDoc files
+
+The key to making all this work is to use regions within the AsciiDoc file.
+
+Using these regions makes it really easy to extract the correct parts from the HTML file.
+
+=== Markdown files
 
 == Developer Documentation
 

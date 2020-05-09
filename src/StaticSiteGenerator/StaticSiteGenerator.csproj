@@ -37,11 +37,27 @@
           <HintPath>..\packages\AngleSharp.0.9.11\lib\net45\AngleSharp.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="ManyConsole, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\ManyConsole.2.0.1\lib\net46\ManyConsole.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="ManyConsoleModeCommand, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\ManyConsole.2.0.1\lib\net46\ManyConsoleModeCommand.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="Markdig, Version=0.15.5.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\packages\Markdig.0.15.5\lib\net40\Markdig.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="McMaster.Extensions.CommandLineUtils, Version=2.3.4.0, Culture=neutral, PublicKeyToken=6f71cb76b82f055d">
+          <HintPath>..\packages\McMaster.Extensions.CommandLineUtils.2.3.4\lib\net45\McMaster.Extensions.CommandLineUtils.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="Microsoft.CSharp" />
+        <Reference Include="Mono.Options, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\Mono.Options.5.3.0\lib\net4-client\Mono.Options.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="mscorlib" />
         <Reference Include="NUglify, Version=1.5.12.0, Culture=neutral, PublicKeyToken=15bc7810aec21b5e">
           <HintPath>..\packages\NUglify.1.5.12\lib\net40\NUglify.dll</HintPath>
@@ -50,6 +66,19 @@
         <Reference Include="System" />
         <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
           <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.ComponentModel.DataAnnotations" />
+        <Reference Include="System.ComponentModel.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.ComponentModel.Primitives.4.3.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="System.ComponentModel.TypeConverter, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\System.ComponentModel.TypeConverter.4.3.0\lib\net462\System.ComponentModel.TypeConverter.dll</HintPath>
           <Private>True</Private>
         </Reference>
         <Reference Include="System.Core" />
@@ -62,13 +91,26 @@
           <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
           <Private>True</Private>
         </Reference>
+        <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+          <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System.Web" />
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Commands\GeneratorCommand.cs" />
+        <Compile Include="Converters\AsciiDocConverter.cs" />
+        <Compile Include="Converters\MarkdownConverter.cs" />
+        <Compile Include="Models\Configuration.cs" />
+        <Compile Include="Models\DirectoryMinifier.cs" />
+        <Compile Include="Models\FolderCopier.cs" />
+        <Compile Include="Models\Template.cs" />
+        <Compile Include="Models\TemplateRenderer.cs" />
+        <Compile Include="Models\TemplateRetriever.cs" />
+        <Compile Include="Models\TokenInterpreter.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="Template.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />

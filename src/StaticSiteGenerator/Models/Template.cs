@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using NUglify.JavaScript.Syntax;
 
 namespace StaticSiteGenerator
 {
@@ -22,9 +21,9 @@ namespace StaticSiteGenerator
             Parse();
         }
         
-        public string RootFolder { get; private set; }
+        public string RootFolder { get; }
         public string OutputDirectory { get; private set; }
-        public List<string> Tokens { get; private set; }
+        public List<string> Tokens { get; }
         
         /// <summary>
         /// These are the text files that will use this template
